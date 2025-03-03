@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of War</title>
+    <!-- CSS -->
+     <link rel="stylesheet" href="index.css">
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- FAVICON -->
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+     <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+        <!-- TOP CONTAINER -->
+        <div class="top-container">
+            <button id="shuffle-deck" class="shuffle-deck">Start Game</button>
+            <button id="restart-game" disabled>End Game</button>
+            <p id="remaining-cards" class="remaining-cards"></p>
+        </div>
+
+        <!-- CARD WINNER -->
+        <h3 id="card-winner" class="card-winner">Game of War</h3>
+        <!-- HOUSE SCORE -->
+        <h3 id="house-score" class="house-score">House score: 0</h3>
+
+          <!-- CARDS CONTAINER -->
+        <div id="cards-container" class="cards-container">
+            <!-- <div id="first-card-slot" class="card-img-container"></div> -->
+            <!-- <div id="second-card-slot" class="card-img-container"></div> -->
+            <div id="card-slot-container" class="card-slot-container"></div>
+            <div id="second-card-slot-container" class="second-card-slot-container"></div>
+        </div>
+
+        <!-- MYSCORE -->
+        <h3 id="my-score" class="my-score">Your score: 0</h3>
+        <!-- DRAW CARDS BUTTON -->
+        <button id="draw-cards" class="draw-cards" disabled>Draw New Card</button>
+   
+    
+
+<script src="index.js"></script>
+</body>
+</html>

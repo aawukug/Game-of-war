@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    max-width: 100vw;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #003B71ff;
+    font-family: "Exo 2", serif;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    gap: 2em;
+    color: #FFFFFF;
+}
+
+/* TYPOGRAPHY */
+.remaining-cards {
+    margin: 5px 0 0 0;
+}
+
+
+.card-winner,
+.my-score,
+.house-score {
+    margin-bottom: 0;
+}
+
+
+.house-score,
+.card-winner,
+.cards-container,
+.my-score {
+    margin-top: 0;
+}
+
+
+/* LAYOUTS */
+
+.top-container {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+}
+
+.cards-container {
+    min-height: 50vh;
+}
+
+body,
+.cards-container,
+.card-slot-container,
+.second-card-slot-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-slot-container,
+.second-card-slot-container{
+    height: 198px;
+    width: calc(200px * 5/7);
+    margin: 0 auto;
+    border-radius: 10px;
+    background-image: url("images/card-image.png");
+    background-size: cover;
+    background-position: center;
+    gap: 1em;
+}
+
+.second-card-slot-container {
+    margin-top: 16px;
+}
+
+
+/* CARDS IMAGE */
+img.card-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+    background-color: #FFFFFFff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.shuffle-deck {
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.draw-cards {
+    padding:10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+
+
